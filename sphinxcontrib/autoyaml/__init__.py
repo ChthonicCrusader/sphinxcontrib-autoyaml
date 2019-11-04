@@ -30,8 +30,6 @@ class AutoYAMLException(ExtensionError):
 
 class AutoYAMLDirective(Directive):
 
-    required_arguments = 1
-
     def run(self):
         self.config = self.state.document.settings.env.config
         self.env = self.state.document.settings.env
